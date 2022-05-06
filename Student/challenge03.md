@@ -1,4 +1,4 @@
-# What The Hack: DevOps with GitHub 
+# DevSecOps with GitHub workshop
 
 ## Challenge 3 - Infrastructure as Code (IaC)
 
@@ -16,7 +16,7 @@ Review the following articles:
 
 ### Challenge
 
-We will use GitHub Actions to automate the deployment of our Azure infrastructure. For our application, we will deploy 3 environments: `dev`, `test` and `prod`. Each environment will have its own Web App, however all of our environments will share a single Resource Group, App Service Plan, Application Insights instance, and Azure Container Registry. NOTE: in real deployments, you will likely not share all of these resources.
+We will use GitHub Actions to automate the deployment of our Azure infrastructure. For our application, we will deploy 3 environments: `dev`, `test` and `prod`. Each environment will have its own Web App, however all of our environments will share a single Resource Group and App Service Plan. NOTE: in real deployments, you will likely not share all of these resources.
 
 First, we are going to deploy the dev environment:
 
