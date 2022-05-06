@@ -1,4 +1,4 @@
-# What The Hack: DevOps with GitHub
+# DevSecOps with GitHub workshop
 
 ## Challenge 2 - Repositories
 
@@ -12,16 +12,14 @@ Historically, version control has been the first component that teams implement 
 
 Now that we have a basic understanding of version control and Git, lets get some code checked into source control. DevOps best practices can apply to any programming language, so for today we have provided you a simple .NET Core web application to use.
 
-1. Begin by cloning the GitHub repository you created in the [first challenge](challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
+1. You should be working in your own branch of the workshop repo. The code (sample application and ARM template) is located in the Student/Resources folder in your branch.
 
-2. Next, obtain the code (sample application and ARM template) from the Resource files provided by your coach.
-
-3. Finally, commit the files to your GitHub repository using your preferred Git client.
+1. Move the "Application" and "ARM-Templates" folders to the root of your repository's branch.
 
 ### Success Criteria
 
-- Your repo is cloned to your local machine and sync'd with GitHub.com
-- The "Application" and "ArmTemplates" folders are at the root of your repository
+- You are working in your Codespaces environment in your own branch.
+- The "Application" and "ArmTemplates" folders are at the root of your repository's branch.
 
 ### Learning Resources
 
