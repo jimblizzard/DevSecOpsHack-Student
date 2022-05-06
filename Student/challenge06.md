@@ -1,39 +1,42 @@
-# What The Hack: DevOps with GitHub 
+# DevSecOps with GitHub workshop
 
-## Challenge 6 – Continuous Delivery (CD)
+## Challenge 6 - Security
 
-[< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)
+[< Previous](challenge05.md) - [Home](../readme.md)
 
 ### Introduction
 
-In DevOps after we automate our build process, we want to automate our release process, we do this with a technique called Continuous Delivery (CD). Please take a moment to review this brief article talking about why this is important. 
+Our application is up and running! We are even using a proper Git Flow to protect against unintended changes to our main branch, and we are recording application telemetry into App Insights. Before we are truly production ready, though, there is one topic we have to cover--security. 
 
-- [What is Continuous Delivery?](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-continuous-delivery)
+One good DevOps practice is to enable protections against code-level vulnerabilities, and GitHub provides a number of useful features in this area. First, there are Issues, which allow developers or users to open 'tickets' indicating bugs to be fixed or potential vulnerabilities. If your organization prefers security flaws to be reported in a location other than GitHub, you have the option to provide a custom Security policy which describes the process for reporting. 
+
+In addition to these manual processes, GitHub also provides automated tools for scanning code for common errors. In this challenge, you will utilize the built in Dependabot which provides alerts if your repository contains libraries, packages, or external dependencies with known vulnerabilities. You will also set up a workflow with CodeQL which can scan your source code for common coding errors or basic security flaws.
 
 ### Challenge
 
-In this challenge, we will use GitHub Actions to deploy our container image to the dev environment. 
+In this challenge, you will improve the security of your repository using some of GitHub's built-in tools. 
 
-**OPTIONAL**: Use your code editor (VS Code) to update your workflow file locally on your machine. Remember to commit and push any changes.
+1. Find the repository's Security policy. If there is an existing policy, make an edit and merge your change back into the main branch. Otherwise, go ahead and create a policy using the template provided. GitHub Security policies are Markdown documents that indicate the preferred way to report security vulnerabilities for the repository. 
 
-Extend the workflow you created in Challenge #4 to:
+2. Enable Dependabot alerts for the repository. Dependabot is an automated tool that creates a pull request when any dependencies in the code base has a known vulnerability. 
 
-1. Configure your `dev` environment to pull the latest container image from ACR. 
-   - Login to Azure using your service principal, if needed ([hint](https://docs.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#tabpanel_CeZOj-G++Q-3_service-principal))
-   - Use the `Azure/webapps-deploy@v2` [action](https://github.com/Azure/webapps-deploy) to update the Web App to pull the latest image from ACR. Key parameters to configure:
-      - `app-name` - the name of the wep app instance to target
-      - `images` - the path to the image you pushed to ACR
+3. (**NOTE**: Skip this step while code scanning is in Beta.) Finally, set up and run a Code scanning workflow for the repository using GitHub's 'CodeQL Analysis.' This workflow can run either on each pull request or on a schedule, and it checks your code for common vulnerabilities or errors. 
 
-2. Make a small change to your application  (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), commit, push, monitor the workflow and see if the change shows up on the dev instance of the website.
+## Success Criteria
 
-**NOTE**: Normally, we would have you configure [release gates](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops) next - which would require some type of manual approval/human intervention *before* deploying to test and prod respectively. But, as of 10/7/20, GitHub doesn't offer this natively - although it is on the [GitHub roadmap](https://github.com/github/roadmap/issues/99), due to be available by the end of 2020.
+- In GitHub, you should be able to view the 'closed' pull request which either created or updated the Security policy (SECURITY.md file). 
+- Additionally, you should be able to view a new 'open' pull request created by Dependabot requesting an update of a dependency. 
+- Finally, you should be able to view the results of the CodeQL Analysis in the Security tab. 
 
-### Success Criteria
+## Learning Resources
 
-1. A small change to `/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml` automatically shows up on the website running in the dev environment (i.e., `<prefix>devops-dev`.azurewebsites.net).
+- Learn more about adding a security policy to your repository [here](https://docs.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository).
+- Learn more about Dependabot and vulnerable dependencies [here](https://docs.github.com/en/github/managing-security-vulnerabilities/managing-vulnerabilities-in-your-projects-dependencies).
+- Learn more about automated code scanning and understanding results [here](https://docs.github.com/en/github/finding-security-vulnerabilities-and-errors-in-your-code).
 
-### Learning Resources
 
-- [Deploy a custom container to App Service using GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#tabpanel_CeZOj-G++Q-3_service-principal)
+## Tips
 
-[< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)
+- If you are stuck, check out the 'Security' tab of your repository on GitHub.
+
+[< Previous](challenge05.md) - [Home](../readme.md)

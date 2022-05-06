@@ -22,7 +22,7 @@ First, we are going to deploy the dev environment:
 
 1. Review the ARM template. Notice how it defines a number of parameters and uses them to create the Resource Group, App Service Plan and Web App.
 
-2. Update the ARM template, replacing the `<prefix>` part with your initials plus a two-digit number, such as `rfg33`. The resulting name needs to be globally unique to correctly provision resources.
+2. Update the ARM template, replacing the `<prefix>` part with your initials plus a two-digit number, for example `jmb88`. The resulting name needs to be globally unique to correctly provision resources.
 
 3. Create a GitHub workflow (`deployDev.yml`) that accomplishes the following:
     - Only runs when changes are made to the workflow file itself 
@@ -48,7 +48,7 @@ You should see all three environments in Azure.
 ### Success Criteria
 
 - Your workflows completes without any errors.
-- Your resource group contains 5 resources: 3 App Services, **TBD:** 1 Application Insights, 1 App Service plan.
+- Your resource group contains 4 resources: 3 App Services, and 1 App Service plan.
 
 ### Learning Resources
 

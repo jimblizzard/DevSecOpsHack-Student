@@ -1,8 +1,8 @@
-# What The Hack: DevOps with GitHub 
+# DevSecOps with GitHub workshop
 
-## Challenge 8 – Monitoring: Application Insights
+## Challenge 6 – Monitoring: Application Insights **(TBD)**
 
-[< Previous](challenge07.md) - [Home](../readme.md) - [Next >](challenge09.md)
+[< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)
 
 ### Introduction
 
@@ -37,4 +37,4 @@ In this challenge we will look at some of the telemetry that has already been co
 
     - **NOTE**: It takes a min or two after an event happens for it to make its way to Application Insights and for it to be indexed so you can see it in the portal.
 
-[< Previous](challenge07.md) - [Home](../readme.md) - [Next >](challenge09.md)
+[< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)
