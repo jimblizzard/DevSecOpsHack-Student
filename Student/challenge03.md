@@ -20,9 +20,9 @@ We will use GitHub Actions to automate the deployment of our Azure infrastructur
 
 First, we are going to deploy the dev environment:
 
-1. Review the ARM template. Notice how it defines a number of parameters and uses them to create the Resource Group, App Service Plan, Web App, Application Insights, and Azure Container Registry.
+1. Review the ARM template. Notice how it defines a number of parameters and uses them to create the Resource Group, App Service Plan and Web App.
 
-2. Update the ARM template, replacing the `<prefix>` part with a unique lowercase 5 letter name. The resulting name needs to be globally unique to correctly provision resources.
+2. Update the ARM template, replacing the `<prefix>` part with your initials plus a two-digit number, such as `rfg33`. The resulting name needs to be globally unique to correctly provision resources.
 
 3. Create a GitHub workflow (`deployDev.yml`) that accomplishes the following:
     - Only runs when changes are made to the workflow file itself 
