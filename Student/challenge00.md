@@ -1,4 +1,4 @@
-# DevSecOps with GitHub
+# DevSecOps with GitHub workshop
 
 ## Challenge 0 - Setup
 
