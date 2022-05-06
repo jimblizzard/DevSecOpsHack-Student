@@ -1,4 +1,4 @@
-# What The Hack: DevOps with GitHub
+# DevSecOps with GitHub workshop
 
 ## Challenge 4 - Continuous Integration (CI)
 
