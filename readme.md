@@ -1,16 +1,16 @@
-# What The Hack - DevOps with GitHub
+# What The Hack - DevSecOps with GitHub
 
 ## Introduction
-DevOps is a journey not a destination. Our goal when writing this challenged based hack is to introduce you to GitHub and some common DevOps practices. We also understand that your choice of programming language and DevOps processes might differ from the ones we will be using in this hack, that is OK. Our intent was to select some of the most common programming languages and highlight industry best practices, with an emphasis on showing how GitHub can help you on your DevOps journey, so that you can apply this in your environment with the languages and tools that you use.
+DevOps is a journey not a destination. Our goal when writing this challenged based hack is to introduce you to GitHub and some common DevOps and DevSecOps practices. We also understand that your choice of programming language and DevOps processes might differ from the ones we will be using in this hack, that is OK. Our intent was to select some of the most common programming languages and highlight industry best practices, with an emphasis on showing how GitHub can help you on your DevOps/DevSecOps journey, so that you can apply this in your environment with the languages and tools that you use.
 
 ## Learning Objectives
 
-This DevOps with GitHub hack will help you learn:
+This DevSecOps with GitHub hack will help you learn:
 
 1. How to use GitHub to manage source control
 1. How to use GitHub for Project Management
 1. How to use GitHub Actions for CI & CD
-1. Monitoring apps with Application Insights
+1. Monitoring apps with Application Insights **(TBD)**
 
 ## Challenges
  - [Challenge 0](./Student/challenge00.md) - Setup and Introduction
@@ -18,10 +18,11 @@ This DevOps with GitHub hack will help you learn:
  - [Challenge 2](./Student/challenge02.md) - Centralize your code with GitHub Repos
  - [Challenge 3](./Student/challenge03.md) - Infrastructure as Code
  - [Challenge 4](./Student/challenge04.md) - Continuous Integration
- - [Challenge 5](./Student/challenge05.md) - Build and push Docker image to container registry
+ <br/>
+~~REMOVE - [Challenge 5](./Student/challenge05.md) - Build and push Docker image to container registry~~
  - [Challenge 6](./Student/challenge06.md) - Continuous Delivery
  - [Challenge 7](./Student/challenge07.md) - Branching & Policies
- - [Challenge 8](./Student/challenge08.md) - Monitoring: Application Insights
+ - **TBD:** [Challenge 8](./Student/challenge08.md) - Monitoring: Application Insights
  - [Challenge 9](./Student/challenge09.md) - Security
 
 
