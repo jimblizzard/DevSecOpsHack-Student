@@ -24,7 +24,7 @@ First, we are going to deploy the dev environment:
 
 1. Review the ARM Template files `template.json` and `parameters.json`. Notice how there are a number of parameters which are used to update the Resource Group, and create or update the App Service Plan and Web App.
 
-2. Update the `parameters.json` file, replacing the `<prefix>` part with your initials plus a two-digit number, for example `jmb88`. The resulting name needs to be globally unique to correctly provision resources. Also change `<yourSubscriptionId>` to your Azure subscription ID. 
+2. Update the `parameters.json` file, replacing the `<prefix>` part with your initials plus a two-digit number, for example `jmb88`. The resulting name needs to be globally unique to correctly provision resources. Change `<yourSubscriptionId>` to your Azure subscription ID. Also, be sure the Resourc Group name matches the name of your Resource Group.
 
 3. Create a GitHub workflow (`deployDev.yml`) that accomplishes the following:
     - Only runs when changes are made to the workflow file itself 
@@ -33,14 +33,14 @@ First, we are going to deploy the dev environment:
 
 When your workflow completes successfully, go to the Azure portal to see the environment. If everything worked, create the test environment:
 
-4. Update the webAppName template parameter (line #6) to `<prefix>devops-test`. Important: commit and push to GitHub before proceeding!
+4. Update the webAppName template parameter to `<prefix>devops-test`. Important: commit and push to GitHub before proceeding!
 
 5. Copy your `dev` workflow file and use it to create a new workflow file for `test` (`deployTest.yml`)
     - Be sure to update the `paths` in your workflow file (i.e., `.github/workflows/deployTest.yml`)
 
 When your workflow completes successfully, go to the Azure portal to see the `test` environment. If everything worked, create the `prod` environment:
 
-6. Update the webAppName template parameter (line #6) to `<prefix>devops-prod`. Important: commit and push to GitHub before proceeding!
+6. Update the webAppName template parameter to `<prefix>devops-prod`. Important: commit and push to GitHub before proceeding!
 
 7. Copy your `test` workflow file and use it to create a new workflow file for `prod` (`deployProd.yml`)
     - Be sure to update the `paths` in your workflow file (i.e., `.github/workflows/deployProd.yml`)
