@@ -1,0 +1,4 @@
+# create service principal
+az ad sp create-for-rbac --name "<prefix>>webapps" --role contributor \
+                            --scopes /subscriptions/<mysubscriptionID>/resourceGroups/<prefix>webapps-rg \
+                            --sdk-auth
