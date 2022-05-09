@@ -14,7 +14,7 @@ Now that we have a basic understanding of version control and Git, lets get some
 
 1. You should be working in your own branch of the workshop repo. The code (sample application and ARM template) is located in the Student/Resources folder in your branch.
 
-1. Move the "Application" and "ARM-Templates" folders to the root of your repository's branch.
+1. Move the contents of the "Resources/Application/src/RazorPagesTestSample" folder to the root of your repository's branch.
 
 ### Success Criteria
 
