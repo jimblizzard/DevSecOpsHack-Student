@@ -16,7 +16,9 @@ Review the following articles:
 
 ### Challenge
 
-We will use GitHub Actions to automate the deployment of our Azure infrastructure. For our application, we will deploy 3 environments: `dev`, `test` and `prod`. Each environment will have its own Web App, however all of our environments will share a single Resource Group and App Service Plan. NOTE: in real deployments, you will likely not share all of these resources.
+We will use GitHub Actions to automate the deployment of our Azure infrastructure. For our application, we will deploy 3 environments: `dev`, `test` and `prod`. Each environment will have its own Web App, however all of our environments will share a single Resource Group and App Service Plan. Note that in real deployments, you will likely not share all of these resources.
+
+If you do not already have a resource group created for this workshop, go to the Azure portal and create one now if your sandbox environment. Then create a Service Principal so you can deploy your infrastructure to the resource group from GitHub Actions. If you're in your Codespaces environment, you can open the Terminal then run `az login --use-device-code`. Copy the device code and in the browser tab that opens, paste it into the window. Then create your Service Principal using the sample bash command located in 'Student/Resources/azure-cli-commands.txt'.
 
 First, we are going to deploy the dev environment:
 
