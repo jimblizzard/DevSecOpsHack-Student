@@ -16,6 +16,8 @@ Now that we have a basic understanding of version control and Git, lets get some
 
 1. Move the contents of the "Student/Resources/Application/src/RazorPagesSample" folder to the root of your repository's branch.
 
+1. Commit your changes to your branch.
+
 ### Success Criteria
 
 - You are working in your Codespaces environment in your own branch.
