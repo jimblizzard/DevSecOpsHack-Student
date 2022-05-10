@@ -10,18 +10,14 @@ Historically, version control has been the first component that teams implement 
 
 ### Challenge
 
-Now that we have a basic understanding of version control and Git, lets get some code checked into source control. DevOps best practices can apply to any programming language, so for today we have provided you a simple .NET Core web application to use.
+Now that we have a basic understanding of version control and Git, let's take a look at what we have. DevOps best practices can apply to any programming language, so for today we have provided you a simple .NET Core web application to use.
 
 1. You should be working in your own branch of the workshop repo. The code (sample application and ARM template) is located in the Student/Resources folder in your branch.
-
-1. Move the contents of the "Student/Resources/Application/src/RazorPagesSample" folder to the root of your repository's branch.
-
-1. Commit your changes to your branch.
 
 ### Success Criteria
 
 - You are working in your Codespaces environment in your own branch.
-- The "Application" and "ArmTemplates" folders are at the root of your repository's branch.
+- You have reviewed the files in your branch. 
 
 ### Learning Resources
 
