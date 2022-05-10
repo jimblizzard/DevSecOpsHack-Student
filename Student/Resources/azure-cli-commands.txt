@@ -1,4 +1,7 @@
-# create service principal
+# If no web browser is available or if the web browser fails to open, use device code flow with 
+az login --use-device-code
+
+# Create a service principal
 az ad sp create-for-rbac --name "<prefix>webapps" --role contributor \
                             --scopes /subscriptions/<mysubscriptionID>/resourceGroups/<prefix>webapps-rg \
                             --sdk-auth
