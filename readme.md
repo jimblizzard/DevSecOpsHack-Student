@@ -5,7 +5,7 @@ DevOps is a journey not a destination. Our goal when writing this challenged bas
 
 ## Learning Objectives
 
-This DevSecOps with GitHub hack will help you learn:
+This DevSecOps with GitHub hack will help you learn:  
 
 1. How to use GitHub to manage source control
 1. How to use GitHub for Project Management
